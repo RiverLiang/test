@@ -1,0 +1,143 @@
+# Link map of F_EntryPoint
+
+
+
+# .interrupt_vectorsboot
+#>00000000          F_vector_addr (linker command file)
+  00000000 00000004 interrupt_vectorsboot.text F_vectboot	(Vectors.c)
+
+# .interrupt_vectors
+  00000000 00000086 interrupt_vectors.text F_vect	(Vectors.c)
+
+# .ApplicationCode
+#>00000086          F_Pcode_start_addr (linker command file)
+  00000086 00000075 .text   F_EntryPoint	(Cpu.c)
+  000000FB 00000007 .text   FCpu_Interrupt	(Cpu.c)
+  00000102 00000038 .text   FCpu__ivINT_GPIO_F	(Cpu.c)
+  0000013A 00000163 .text   FPE_low_level_init	(Cpu.c)
+  0000029D 00000020 .text   Fmain	(PmsmFocDrv.c)
+  000002BD 00000011 .text   FPWMC1_InterruptOnReload	(PWMC1.c)
+  000002CE 00000018 .text   FPWMC1_InterruptOnFault	(PWMC1.c)
+  000002E6 00000003 .text   FPWMC1_Init	(PWMC1.c)
+  000002E9 00000185 .text   FeFPWM1_Init	(eFPWM1.c)
+  0000046E 0000005B .text   FHWEnDi	(AD1.c)
+  000004C9 0000000D .text   FAD1_Enable	(AD1.c)
+  000004D6 0000009B .text   FAD1_Init	(AD1.c)
+  00000571 0000000C .text   FWDog1_Clear	(WDog1.c)
+  0000057D 0000000B .text   FWDog1_Init	(WDog1.c)
+  00000588 0000003C .text   FSetPV	(HallTmr.c)
+  000005C4 00000034 .text   FHallTmr_Init	(HallTmr.c)
+  000005F8 00000021 .text   FPC_M1_pcmasterdrvInit	(PC_M1.c)
+  00000619 0000002D .text   FPC_M1_pcmasterdrvIsr	(PC_M1.c)
+  00000646 00000015 .text   FmemCopy	(PC_M1.c)
+  0000065B 00000071 .text   FsendBuffer	(PC_M1.c)
+  000006CC 00000022 .text   FsendResponse	(PC_M1.c)
+  000006EE 00000874 .text   FmessageDecode	(PC_M1.c)
+  00000F62 00000098 .text   FmessageData	(PC_M1.c)
+  00000FFA 00000014 .text   FInhr1_OnError	(PC_M1.c)
+  0000100E 00000006 .text   FInhr1_OnRxChar	(PC_M1.c)
+  00001014 00000006 .text   FInhr1_OnTxChar	(PC_M1.c)
+  0000101A 00000051 .text   FPC_M1_PE_Init	(PC_M1.c)
+  0000106B 0000000A .text   FHWEnDi	(Inhr1.c)
+  00001075 0000003B .text   FInhr1_RecvChar	(Inhr1.c)
+  000010B0 0000003D .text   FInhr1_SendChar	(Inhr1.c)
+  000010ED 00000073 .text   FInhr1_GetError	(Inhr1.c)
+  00001160 00000047 .text   FInhr1_InterruptRx	(Inhr1.c)
+  000011A7 00000027 .text   FInhr1_InterruptTx	(Inhr1.c)
+  000011CE 0000003B .text   FInhr1_InterruptError	(Inhr1.c)
+  00001209 0000000F .text   FInhr1_Init	(Inhr1.c)
+  00001218 0000001F .text   FDA1_Init	(DA1.c)
+  00001237 0000002A .text   FPWMC1_OnReload	(PwmMcIsr.c)
+  00001261 00000001 .text   FPWMC1_OnFault0	(PwmMcIsr.c)
+  00001262 00000001 .text   FHall_W_OnInterrupt	(HallIsr.c)
+  00001263 00000001 .text   FHall_V_OnInterrupt	(HallIsr.c)
+  00001264 00000001 .text   FHall_U_OnInterrupt	(HallIsr.c)
+  00001265 00000028 .text   FHWEnDi	(Resolver.c)
+  0000128D 00000016 .text   FResolver_Init	(Resolver.c)
+  000012A3 00000017 .text   Fstrcpy	(MSL C 56800E.lib string.o       )
+  000012BA 00000000 rtlib.text FARTDIVU16UZ	(Runtime 56800E.Lib artdivu16uz.o  )
+  000012BA 00000000 rtlib.text ARTDIVU16UZ	(Runtime 56800E.Lib artdivu16uz.o  )
+  000012BA 00000021 rtlib.text rtlib.text	(Runtime 56800E.Lib artdivu16uz.o  )
+  000012DB 00000042 rtlib.text rtlib.text	(Runtime 56800E.Lib save_reg.o     )
+  000012DB 00000000 rtlib.text INTERRUPT_SAVEALL	(Runtime 56800E.Lib save_reg.o     )
+  000012FE 00000000 rtlib.text INTERRUPT_RESTOREALL	(Runtime 56800E.Lib save_reg.o     )
+  0000131D 00000045 startup.text Finit_56800_	(56F80xx_init.asm)
+  0000131D 00000045 startup.text startup.text	(56F80xx_init.asm)
+#>00001362          F_Pcode_end_addr (linker command file)
+#>00001362          __pROM_data_start (linker command file)
+
+# .data_in_p_flash_ROM
+#>00000001          __xRAM_data_start (linker command file)
+  00000001 0000000D .const.data F@320	(PC_M1.c)
+#>0000000E          __xRAM_data_end (linker command file)
+#>0000000D          __data_size (linker command file)
+
+# .ApplicationData
+#>00000010          F_Xbss_start_addr (linker command file)
+#>00000010          _START_BSS (linker command file)
+  00000010 00000001 .bss    FSR_lock	(Cpu.c)
+  00000011 00000001 .bss    FSR_reg	(Cpu.c)
+  00000012 00000001 .bss    FAD1_ModeFlg	(AD1.c)
+  00000013 00000001 .bss    FOutFlg	(AD1.c)
+  00000013 00000001 .bss    FAD1_EnUser	(AD1.c)
+  00000014 0000001F .bss    FpcmdrvDataBuff$304	(PC_M1.c)
+  00000033 00000016 .bss    FPCMSettings$305	(PC_M1.c)
+  00000049 00000019 .bss    FpcmdrvScope$306	(PC_M1.c)
+  00000062 00000028 .bss    FPCMasterCommRecorderBuffer$307	(PC_M1.c)
+  0000008A 00000034 .bss    FpcmdrvRecorder$308	(PC_M1.c)
+  000000BE 00000002 .bss    FPCMasterAppCmdBuff$309	(PC_M1.c)
+  000000C0 00000001 .bss    FPC_M1_SCITxEmptyInt	(PC_M1.c)
+  000000C1 00000001 .bss    FPC_M1_SCIRxFullInt	(PC_M1.c)
+  000000C2 00000001 .bss    Fstatus	(PC_M1.c)
+  000000C3 00000001 .bss    Fresponse	(PC_M1.c)
+  000000C4 00000001 .bss    FPCMasterComm	(PC_M1.c)
+  000000C5 00000001 .bss    FcheckSum	(PC_M1.c)
+  000000C6 00000001 .bss    Flength	(PC_M1.c)
+  000000C7 00000001 .bss    Fpos	(PC_M1.c)
+  000000C8 00000001 .bss    FinChar	(PC_M1.c)
+  000000C9 00000001 .bss    FpcmdrvAppCmdSts	(PC_M1.c)
+  000000C9 00000001 .bss    FBufferRead	(Inhr1.c)
+  000000CA 00000001 .bss    FErrFlag	(Inhr1.c)
+  000000CB 00000001 .bss    FSerFlag	(Inhr1.c)
+  000000CC 00000001 .bss    FadVdc$673	(PwmMcIsr.c)
+  000000CD 00000001 .bss    FadIu$674	(PwmMcIsr.c)
+  000000CE 00000001 .bss    FadIv$675	(PwmMcIsr.c)
+  000000CF 00000001 .bss    FadIw$676	(PwmMcIsr.c)
+  000000D0 00000001 .bss    FBufferWrite	(Resolver.c)
+  000000D1 00000001 .bss    FSerFlag	(Resolver.c)
+  000000D2 00000001 .bss    FEnUser	(Resolver.c)
+#>000000D2          _END_BSS (linker command file)
+#>000000C2          F_Xbss_length (linker command file)
+#>000000D4          _HEAP_ADDR (linker command file)
+#>00000100          _HEAP_SIZE (linker command file)
+#>000001D4          _HEAP_END (linker command file)
+#>00000200          _min_stack_size (linker command file)
+#>000001D4          _stack_addr (linker command file)
+#>000003D4          _stack_end (linker command file)
+#>000000D4          F_heap_addr (linker command file)
+#>000001D4          F_heap_end (linker command file)
+#>000001D4          F_Lstack_addr (linker command file)
+#>000001D4          F_StackAddr (linker command file)
+#>000003D3          F_StackEndAddr (linker command file)
+#>0000000D          F_Ldata_size (linker command file)
+#>00000001          F_Ldata_RAM_addr (linker command file)
+#>00001362          F_Ldata_ROM_addr (linker command file)
+#>00000000          F_xROM_to_xRAM (linker command file)
+#>00000001          F_pROM_to_xRAM (linker command file)
+#>00000010          F_start_bss (linker command file)
+#>000000D2          F_end_bss (linker command file)
+#>000003D4          __DATA_END (linker command file)
+
+
+# Memory map:
+  v_addr   p_addr   size     name
+  0000F000 0000F000 00000000 .x_Peripherals
+  00000000 00000000 00000004 .p_Interruptsboot
+  00000000 00000000 00000086 .p_Interrupts
+  00000086 00000086 000012DC .p_Code
+  00000001 00000001 000003D3 .x_Data
+  00001362 00000001 0000000D .p_flash_ROM_data
+  00008000 00008000 00001000 .p_internal_RAM
+
+# Link start time: Fri Mar 07 16:06:20 2014
+# Link end time: Fri Mar 07 16:06:21 2014
