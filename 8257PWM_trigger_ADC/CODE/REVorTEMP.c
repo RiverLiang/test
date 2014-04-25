@@ -6,7 +6,7 @@
 **     Component : BitIO
 **     Version   : Component 02.075, Driver 01.18, CPU db: 3.00.231
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-1, обнГ 09:17
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **         This bean "BitIO" implements an one-bit input/output.
 **         It uses one bit/pin of a port.

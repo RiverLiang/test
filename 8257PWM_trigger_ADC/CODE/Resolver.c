@@ -6,7 +6,7 @@
 **     Component : SynchroMaster
 **     Version   : Component 02.322, Driver 02.02, CPU db: 3.00.231
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-3, ионГ 11:17
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **         This bean "SynchroMaster" implements MASTER part of synchronous
 **         serial master-slave communication.

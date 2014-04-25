@@ -6,7 +6,7 @@
 **     Component : IO_Map
 **     Version   : Driver 01.00
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-1, обнГ 06:34
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **         IO_Map.h - implements an IO device's mapping. 
 **         This module contains symbol definitions of all peripheral 

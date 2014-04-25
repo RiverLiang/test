@@ -6,7 +6,7 @@
 **     Component : ADC
 **     Version   : Component 01.580, Driver 02.05, CPU db: 3.00.231
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-2, обнГ 03:31
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **         This device "ADC" implements an A/D converter,
 **         its control methods and interrupt/event handling procedure.

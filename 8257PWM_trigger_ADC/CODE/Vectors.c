@@ -5,7 +5,7 @@
 **     Processor : MC56F8257
 **     Version   : Component 01.014, Driver 02.08, CPU db: 3.00.231
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-3, ионГ 11:17
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **
 **     Settings  :

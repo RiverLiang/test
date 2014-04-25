@@ -49,6 +49,7 @@
 void main(void)
 {
   /* Write your local variable definition here */
+  int a = 0;
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
 	PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
@@ -66,7 +67,9 @@ void main(void)
 	while(1)
 	{
 		WDog1_Clear();
-		
+		a++;
+		if(a)
+			a = 0;
 
 	}
 }

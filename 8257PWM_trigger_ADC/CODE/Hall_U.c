@@ -6,7 +6,7 @@
 **     Component : ExtInt
 **     Version   : Component 02.094, Driver 02.04, CPU db: 3.00.231
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-1, обнГ 09:23
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **         This bean "ExtInt" implements an external 
 **         interrupt, its control methods and interrupt/event 

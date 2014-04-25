@@ -6,7 +6,7 @@
 **     Component : DAC
 **     Version   : Component 01.077, Driver 01.06, CPU db: 3.00.231
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-1, обнГ 09:17
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **         This bean "DAC" implements an internal D/A converter
 **         of the MCU. It allows select channels of D/A converter and

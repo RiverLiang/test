@@ -6,7 +6,7 @@
 **     Component : WatchDog
 **     Version   : Component 02.121, Driver 02.01, CPU db: 3.00.231
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-2, обнГ 03:30
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **         This device "WatchDog" implements a watchdog.
 **         When enabled, the watchdog timer counts until it reaches

@@ -6,7 +6,7 @@
 **     Component : DSP_Func_MFR
 **     Version   : Component 01.044, Driver 01.12, CPU db: 3.00.231
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-1, обнГ 09:17
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **          This bean encapsulates the basic math functions for both
 **          16-bit and 32-bit fractional types.

@@ -7,7 +7,7 @@
 **     Version   : Component 01.014, Driver 02.08, CPU db: 3.00.231
 **     Datasheet : MC56F824x/5xPB Rev. 1.0.0, 09/2008; MC56F82XXRM Rev. 0 Draft A 11/2008
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-1, обнГ 09:17
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **
 **     Settings  :

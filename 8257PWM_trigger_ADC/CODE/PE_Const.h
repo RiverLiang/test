@@ -6,7 +6,7 @@
 **     Component : PE_Const
 **     Version   : Driver 01.02
 **     Compiler  : Metrowerks DSP C Compiler
-**     Date/Time : 2013-10-1, обнГ 06:34
+**     Date/Time : 2014/4/25, 9:32
 **     Abstract  :
 **         This bean "PE_Const" contains internal definitions
 **         of the constants.
